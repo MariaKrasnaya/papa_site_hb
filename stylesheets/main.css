@@ -1,43 +1,136 @@
 * {
   box-sizing: border-box;
 }
-
+.hidden {
+  display: none;
+}
 @font-face {
-  font-family: "CarlaSansLight";
-  src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+  font-family: "FliegeMono";
+  src: url("../fonts/FliegeMonoVF.woff2") format("woff");
   font-style: Light;
   font-weight: Light;
 }
-
-p {
-  font-family: "CarlaSansLight";
+h1 {
+  font-family: "FliegeMono";
+  font-size: 4vw;
+  color: #0400dd;
 }
+p {
+  font-family: "FliegeMono";
+  font-size: 2vw;
+}
+/* Прячем элементы до клика */
 
 .section1 {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 75vw;
   background: white;
+}
+
+.information {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: red;
+  animation: info 5s ease-in-out infinite;
+}
+@keyframes info {
+  0% {
+    margin-top: 20vw;
+    margin-left: 36vw;
+    background-color: red;
+    transform: scale(1);
+    border-radius: 50%;
+  }
+  30% {
+    margin-top: 30vw;
+    margin-left: 60vw;
+    background-color: rgb(255, 0, 221);
+  }
+  50% {
+    margin-top: 40vw;
+    margin-left: 26vw;
+    transform: scale(2);
+    border-radius: 40%;
+  }
+  60% {
+    margin-top: 28vw;
+    margin-left: 70vw;
+    background-color: rgb(255, 128, 0);
+  }
+  100% {
+    margin-top: 20vw;
+    margin-left: 36vw;
+    background-color: red;
+    transform: scale(1);
+    border-radius: 50%;
+  }
+}
+
+.text_sec1 {
+  font-family: "FliegeMono";
+  color: #0400dd;
+  margin-top: 13vw;
+  padding-right: 8vw;
+}
+
+.text_sec1 p {
+  color: #0400dd;
+  line-height: 2.4vw;
+  padding-top: 1.3vw;
+}
+/* Эффект для букв при печатании */
+.typing {
+  /* white-space: pre-wrap; */
+  overflow: hidden;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }
 
 .marusia_sec1 {
   width: 36vw;
   height: 35vw;
-  animation: marusen 4s ease-in-out infinite;
 }
 
-@keyframes marusen {
+.chick img {
+  position: absolute;
+  width: 5vw;
+  height: 3vw;
+  margin-top: -16.6vw;
+  margin-left: 9vw;
+  animation: shy 6s ease-in-out infinite;
+}
+@keyframes shy {
   0% {
     opacity: 0%;
   }
-  14% {
-    opacity: 100%;
+  50% {
+    opacity: 85%;
   }
   100% {
-    opacity: 100%;
+    opacity: 0%;
   }
 }
-
+.chick2 img {
+  position: absolute;
+  width: 5vw;
+  height: 3vw;
+  margin-top: -14.6vw;
+  margin-left: 20vw;
+  animation: shy 6s ease-in-out infinite;
+}
 .eye1 {
   margin-top: -18vw;
   margin-left: 13vw;
@@ -115,4 +208,88 @@ p {
     margin-left: 20.6vw;
     margin-top: -16.4vw;
   }
+}
+
+.button {
+  background-color: #0400dd;
+  font-family: "FliegeMono";
+  position: absolute;
+  padding: 1vw;
+  border-radius: 1vw;
+  border: none;
+  margin-top: 55%;
+  margin-left: 51%;
+}
+
+.button p {
+  color: white;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 238vw;
+  background: #0400dd;
+}
+
+.row {
+  position: relative;
+  width: 98vw;
+  min-height: 50vw;
+  padding: 3vw;
+  display: flex;
+  gap: 2vw;
+}
+.row p {
+  color: white;
+}
+
+.row img {
+  width: 20vw;
+}
+
+.deda img {
+  justify-content: right;
+}
+.de {
+  width: 20vw;
+}
+
+.da,
+.ba,
+.al,
+.pa {
+  width: 60vw;
+  line-height: 2.5vw;
+  color: white;
+}
+
+.deda,
+.baba,
+.alla,
+.papa {
+  display: flex;
+  align-items: flex-start;
+}
+
+.deda img,
+.baba img,
+.alla img,
+.papa img,
+.musya img {
+  width: 20vw;
+}
+
+.da,
+.ba,
+.al,
+.pa div:last-child {
+  margin-left: 2vw;
+  color: white;
+  max-width: 70vw;
+}
+
+.musya {
+  background-color: #0400dd;
 }

@@ -4,29 +4,112 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Па, поздравляю!</title>
-    <link rel="icon" href="./путь_до_favicon" />
+    <link rel="icon" href="./img/favicon.png" />
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <script src="./js.js" charset="utf-8"></script>
   </head>
   <body>
     <!-- первый экран -->
     <section class="section1">
-      <div>
+      <div class="information"></div>
+      <div class="marusen hidden">
         <img class="marusia_sec1" src="./img/marusia_sec1.svg" alt="Marusia" />
+        <div class="chick"><img src="./img/chick.svg" alt="" /></div>
+        <div class="chick2"><img src="./img/chick.svg" alt="" /></div>
         <div class="eye1"><img src="./img/eye.svg" alt="eye" /></div>
         <div class="eye2"><img src="./img/eye.svg" alt="eye" /></div>
       </div>
-      <div>
+      <div class="text_sec1 hidden">
         <h1>Фатер, с днём рождения!</h1>
-        <p>
-          Поздравляю с 51 годом. Желаю тебе пройти переломный момент с работой
-          на ура, открыть для себя новые возможности в профессии, преодолеть
-          некоторую стагнацию (по твоим словам), конечно много-много теплых
-          посиделок и времени с друзьями и с нами котиками! Очень хочу, чтобы
-          негативные новости не внедрялись нак крепко в твою жизнь. Я тебе
-          благодарна за все, что делаешь. Очень ценю, хоть и не всегда говорю.
-          Ещё раз поздравляю, па! А когда грустно, открывай этот сайт хехе
-        </p>
+        <p id="typingText"></p>
+      </div>
+      <button class="button hidden"><p>Забрать подарочек</p></button>
+    </section>
+
+    <!-- второй экран -->
+    <section class="section2 hidden">
+      <div class="deda row">
+        <div class="de"><img src="./img/deda.svg" alt="" /></div>
+        <div class="da">
+          <p>«Володь, ну ты послушай. Это озеро называется "река Солотча"!»</p>
+          <br />
+          <p>
+            «Мотается тут по кухне..Тень отца Гамлета» (дедушка про суетящуюся
+            бабушку, которая бегает по кухне)
+          </p>
+          <br />
+          <p>«Ты все время хрен с пальцем путаешь!»</p>
+        </div>
+      </div>
+
+      <div class="baba row">
+        <div>
+          <img src="./img/baba.svg" alt="" />
+        </div>
+        <div class="ba">
+          <p>«В отпуске он был феноменальный мужик» (Ба про дедушку)</p>
+          <br />
+          <p>
+            Речь об ужасно соленой ветчине: дедушка разочарован своей покупкой.
+            И у всех спрашивает, как им. Бабушка, чтобы поддержать дедушку
+            говорит: «У меня нет вкуса! Мне всё понравилось.»
+          </p>
+          <br />
+          <p>Ба про папу: «Его с восьмым марта в 12 лет поздравляли лыжники»</p>
+          <br />
+          <p>«Не трогай мою душу»</p>
+          <br />
+          <p>«У меня голова кружится, когда мне не верят!»</p>
+          <br />
+          <p>
+            «Она серьезная девушка. За что возьмется, всё. Крантец!» - Бабуля
+            Надя про Аллу при Алле
+          </p>
+        </div>
+      </div>
+      <div class="alla row">
+        <div>
+          <img src="./img/alla.svg" alt="" />
+        </div>
+        <div class="al">
+          <p>
+            «Папа: у шаурмы на Лукойле пробило днище <br />
+            Алла: у кого? У Маруси или у тебя?
+            <br />Папа: У нас.»
+          </p>
+          <br />
+          <p>«Гуляющая жирность (Алла о твороге 4-20%)»</p>
+        </div>
+      </div>
+      <div class="papa row">
+        <div>
+          <img src="./img/papa.svg" alt="" />
+        </div>
+        <div class="pa">
+          <p>«Богемный электрик»</p>
+          <br />
+          <p>«Слесарь-интеллигент»</p>
+          <br />
+          <p>«Освежить имидж (про обжорство, которое приводит к ожирению)»</p>
+          <br />
+          <p>
+            «Это волнительно для богатых пидрил», - папа про картину Тициана
+            Святой Себастьян
+          </p>
+          <br />
+          <p>
+            Папа, уплетая поздно вечером что-то за обе щёки: «У велосипедистов
+            парусность высокая, так что все я правильно делаю»
+          </p>
+        </div>
+      </div>
+      <div class="musya row">
+        <div>
+          <img src="./img/marusia.svg" alt="" />
+        </div>
+        <div>
+          <p>C днём рождения, па!</p>
+        </div>
       </div>
     </section>
   </body>
