@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const marusenBlock = document.querySelector(".marusen");
   const textBlock = document.querySelector(".text_sec1");
   const Button = document.querySelector(".button");
+
   const typingParagraph = document.getElementById("typingText");
   const section2 = document.querySelector(".section2");
 
@@ -40,6 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Показ section2 при клике на кнопку
   Button.addEventListener("click", () => {
     section2.classList.remove("hidden");
-    section2.scrollIntoView({ behavior: "smooth" });
+
+    // Даем браузеру время на отрисовку
+    setTimeout(() => {
+      section2.scrollIntoView({ behavior: "smooth" });
+    }, 100); // 100 миллисекунд хватает
   });
 });

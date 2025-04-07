@@ -35,7 +35,7 @@ p {
   cursor: pointer;
   border-radius: 50%;
   background-color: red;
-  animation: info 5s ease-in-out infinite;
+  animation: info 7s ease-in-out infinite;
 }
 @keyframes info {
   0% {
