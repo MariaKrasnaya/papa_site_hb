@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "CarlaSansLight";
+  src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+p {
+  font-family: "CarlaSansLight";
+}
+
+.section1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.marusia_sec1 {
+  width: 36vw;
+  height: 35vw;
+  animation: marusen 4s ease-in-out infinite;
+}
+
+@keyframes marusen {
+  0% {
+    opacity: 0%;
+  }
+  14% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.eye1 {
+  margin-top: -18vw;
+  margin-left: 13vw;
+  position: absolute;
+  width: 7vw;
+  height: 4vw;
+  animation: eye 4s ease-in-out infinite;
+}
+@keyframes eye {
+  0% {
+    opacity: 0%;
+    margin-left: 13vw;
+    margin-top: -18vw;
+  }
+  14% {
+    opacity: 0%;
+    margin-left: 15vw;
+    margin-top: -18vw;
+  }
+  18% {
+    opacity: 100%;
+  }
+  28% {
+    opacity: 100%;
+    margin-left: 12vw;
+    margin-top: -17vw;
+  }
+  42% {
+    opacity: 100%;
+    margin-left: 15vw;
+    margin-top: -18vw;
+  }
+
+  100% {
+    opacity: 100%;
+    margin-left: 13vw;
+    margin-top: -18vw;
+  }
+}
+.eye2 {
+  margin-top: -16.4vw;
+  margin-left: 20.6vw;
+  position: absolute;
+  width: 7vw;
+  height: 4vw;
+  animation: eye2 4s ease-in-out infinite;
+}
+@keyframes eye2 {
+  0% {
+    opacity: 0%;
+    margin-left: 20.6vw;
+    margin-top: -16.4vw;
+  }
+  14% {
+    opacity: 0%;
+    margin-left: 22.6vw;
+    margin-top: -16.4vw;
+  }
+  18% {
+    opacity: 100%;
+  }
+  28% {
+    opacity: 100%;
+    margin-left: 19.6vw;
+    margin-top: -15.4vw;
+  }
+  42% {
+    opacity: 100%;
+    margin-left: 22.6vw;
+    margin-top: -16.4vw;
+  }
+
+  100% {
+    opacity: 100%;
+    margin-left: 20.6vw;
+    margin-top: -16.4vw;
+  }
+}
